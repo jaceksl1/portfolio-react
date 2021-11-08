@@ -5,9 +5,9 @@
 }
 
 body {
-  background: linear-gradient(-45deg, #06beb6, #48b1bf);
+  background: linear-gradient(-45deg, #06beb7, #48b1bf, #008080);
   background-size: 400% 400%;
-  animation: gradient 25s ease infinite;
+  animation: gradient 15s ease infinite;
   height: 100%;
   margin: 0 auto;
 }
@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-content: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .head-title {
@@ -38,6 +38,7 @@ body {
   position: relative;
   width: max-content;
   margin: 2% auto;
+  color: #fff;
 }
 
 .head-title::before,
@@ -51,15 +52,15 @@ body {
 }
 
 .head-title::before {
-  background: #48b1bf;
-  animation: gradient 15s ease infinite;
-  animation: typewriter (6s) steps(24) 1s forwards;
+  background: #008080;
+  animation: gradient 10s ease infinite;
+  animation: typewriter (3s) steps(24) 1s forwards;
 }
 
 .head-title::after {
   width: 0.125em;
-  background: black;
-  animation: typewriter (6s) steps(24) 1s forwards,
+  background: #fff;
+  animation: typewriter (3s) steps(24) 1s forwards,
     blink 750ms steps(24) infinite;
 }
 
@@ -69,7 +70,7 @@ body {
   text-align: center;
   letter-spacing: 2px;
   transform: translateY(3rem);
-  animation: fadeInUp 2s ease (6s + 1s) forwards;
+  animation: fadeInUp 2s ease (4s + 1s) forwards;
   margin: 1%;
 }
 
@@ -92,28 +93,79 @@ body {
   }
 }
 
-.gradient-section {
-  display: flex;
-  justify-content: center;
-}
-
 .section-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(45deg, #ffaf00, #bb02ff);
-  background-attachment: fixed;
+  margin: 5% 0;
 }
 
 .main-container {
-  position: relative;
-  width: 1150px;
-  padding: 0px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.project-img1::after {
+  content: "";
+  background: url(images/project1.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 70%;
+  height: 30%;
+  top: 50px;
+  left: 80px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.9;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.project-img2::after {
+  content: "";
+  background: url(images/project2.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 70%;
+  height: 30%;
+  top: 50px;
+  left: 80px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.9;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.project-img3::after {
+  content: "";
+  background: url(images/project3.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 70%;
+  height: 30%;
+  top: 50px;
+  left: 80px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.9;
+  border-radius: 20px;
+  z-index: 1;
 }
 
 .main-container .card {
@@ -121,26 +173,26 @@ body {
   width: 300px;
   height: 420px;
   background: #fff;
-  margin: 0 20px;
+  margin: 10px 20px;
   border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-  transition: 0.5;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.9);
 }
 
 .main-container .card .circle {
-  position: relative;
+  position: absolute;
   width: 100%;
-  height: 100%;
-  background: #000;
-  clip-path: circle(180px at center 0);
+  height: 50%;
+  background: #06beb7;
+  clip-path: ellipse(110px 140px at 10% 20%);
   text-align: center;
+  border-radius: 20px;
 }
 
 .main-container .card .circle h2 {
   color: #fff;
-  font-size: 4.5em;
-  padding: 30px 0;
+  font-size: 3em;
+  text-align: left;
+  padding: 0 0 0 20px;
 }
 
 .main-container .card .content {
@@ -152,23 +204,34 @@ body {
 
 .main-container .card .content p {
   color: #666;
+  text-align: center;
+  margin: 25px;
 }
 
 .main-container .card .content a {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  background: #000;
-  color: #fff;
+  background: #48b1bf;
+  color: #000;
+  font-weight: bold;
   border-radius: 40px;
   text-decoration: none;
-  margin-top: 20px;
+  margin: 20px 10px;
 }
 
-.footer-wrapper {
+.main-container .card .content a:hover {
+  box-shadow: 0 4em 0 0 #2c3e50 inset, 0em 0em 0 0 #bbb;
+  transform: translate(0.3em, 0.2em);
+  color: #fff;
+}
+
+.footer-wrapper,
+.subitile-elements-wrapper {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: space-around;
 }
 
 .footer-wrapper p {
@@ -190,9 +253,15 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.gradient-section {
+  display: flex;
+  justify-content: center;
+}
+
 .gradient-ul {
   position: relative;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   z-index: 2;
 }
@@ -205,13 +274,27 @@ body {
 
 .gradient-ul li a {
   color: black;
+  position: relative;
+  width: 8vw;
+  height: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2re;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  transition: 0.5s;
+  overflow: hidden;
 }
 
-.gradient-ul li a,
 .gradient-ul li p {
   position: relative;
-  width: 10vw;
-  height: 10vw;
+  width: 16vw;
+  height: 16vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,10 +338,15 @@ body {
   .subtitle {
     font-size: 1vw;
   }
-  .gradient-ul li a,
-  .gradient-ul li p {
+
+  .gradient-ul li a {
     width: 6vw;
     height: 6vw;
+  }
+
+  .gradient-ul li p {
+    width: 7vw;
+    height: 7vw;
   }
   .contact-section-header {
     font-size: 2vw;

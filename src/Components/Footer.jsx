@@ -1,10 +1,10 @@
 import React from "react";
 
 const Footer = () => {
-  const element1 = <i class="fab fa-linkedin fa-4x"></i>;
-  const element2 = <i class="fab fa-github fa-4x"></i>;
-  const element3 = <i class="fas fa-envelope-open-text fa-4x"></i>;
-  const element4 = <i class="fab fa-codepen fa-4x"></i>;
+  const element1 = <i class="fab fa-linkedin fa-2x"></i>;
+  const element2 = <i class="fab fa-github fa-2x"></i>;
+  const element3 = <i class="fas fa-envelope-open-text fa-2x"></i>;
+  const element4 = <i class="fab fa-codepen fa-2x"></i>;
 
   return (
     <footer className="footer-wrapper">

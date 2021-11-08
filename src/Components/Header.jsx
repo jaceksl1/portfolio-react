@@ -12,8 +12,8 @@ const Header = () => {
       <div className="nav-wrapper">
         <h1 className="head-title">Hello, my name is Jacek.</h1>
         <div className="subtitle">
-          <p>This is my portfolio!</p>
-          <div className="footer-wrapper">
+          <p>Tech stack:</p>
+          <div className="subitile-elements-wrapper">
             <section className="gradient-section">
               <ul className="gradient-ul">
                 <li>
@@ -37,6 +37,7 @@ const Header = () => {
               </ul>
             </section>
           </div>
+          <p>This is my portfolio:</p>
         </div>
       </div>
     </nav>
