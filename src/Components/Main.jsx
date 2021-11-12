@@ -54,22 +54,12 @@ const Main = () => {
 
   return (
     <>
-      <div className="wrapper-btn-check">
-        <button
-          className="btn-check"
-          onClick={(e) => setShowProject(showProject + 1)}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>Check projects
-        </button>
-      </div>
       <section className="section-wrapper">
         <div className="main-container">
           {projects
             .filter((items, index) => index <= showProject)
             .map(({ id, description, live, code, img }) => (
-              <div className="card card-bacground">
+              <div className="card card-bacground ">
                 <div key={id} className="circle">
                   <h2>{id}</h2>
                 </div>
@@ -95,6 +85,16 @@ const Main = () => {
             ))}
         </div>
       </section>
+      <div className="wrapper-btn-check">
+        <button
+          className="btn-check"
+          onClick={(e) => setShowProject(showProject + 1)}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>Check projects
+        </button>
+      </div>
     </>
   );
 };
