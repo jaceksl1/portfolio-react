@@ -4,6 +4,8 @@ import Project2 from "../images/project2.png";
 import Project3 from "../images/project3.png";
 import Project4 from "../images/project4.png";
 import Project5 from "../images/project5.png";
+import Project6 from "../images/project6.png";
+
 
 const Main = () => {
   const projects = [
@@ -46,6 +48,14 @@ const Main = () => {
       live: "https://jaceksl1.github.io/project2-RWD/#",
       code: "https://github.com/jaceksl1/project2-RWD",
       img: Project5,
+    },
+    {
+      id: 6,
+      description:
+        "Simple validation form in Vanilla JS.",
+      live: "https://jaceksl1.github.io/simpleFormValidation-JS/",
+      code: "https://github.com/jaceksl1/simpleFormValidation-JS",
+      img: Project6,
     },
   ];
 
