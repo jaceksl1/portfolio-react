@@ -6,6 +6,7 @@ import Project4 from "../images/project4.png";
 import Project5 from "../images/project5.png";
 import Project6 from "../images/project6.png";
 import Project7 from "../images/project7.png";
+import Project8 from "../images/project8.png";
 
 const projects = [
   {
@@ -61,6 +62,13 @@ const projects = [
     live: "https://jaceksl1.github.io/magicBall-JS/",
     code: "https://github.com/jaceksl1/magicBall-JS",
     img: Project7,
+  },
+    {
+    id: 8,
+    description: "Timer - Vanilla JS full timer with history in arr change color change background",
+    live: "https://jaceksl1.github.io/timer-JS/",
+    code: "https://github.com/jaceksl1/timer-JS",
+    img: Project8,
   },
 ];
 
