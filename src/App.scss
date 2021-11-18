@@ -6,11 +6,38 @@
 }
 
 body {
-  background: linear-gradient(-45deg, #06beb7, #0cb4b4, #a3e0e0);
-  background-size: 400% 400%;
-  animation: gradient 35s ease infinite;
-  height: 100%;
+  background: linear-gradient(-45deg, #06beb7, #0cb4b4, #033d3d),
+    url(./images/background2bw.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: relative;
+  background-size: 100% 100%;
+  animation: gradient 15s ease infinite;
+  z-index: 1;
   margin: 0 auto;
+}
+
+body::after {
+  content: "";
+  background: url(./images/background2bw.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  opacity: 0.4;
+  z-index: -1;
 }
 
 @keyframes gradient {
@@ -155,6 +182,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   position: relative;
+  width: 80%;
 }
 
 .project-img1 {
@@ -191,7 +219,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.9);
   opacity: 0;
-  animation: fadeInUp linear (1s) forwards;
+  animation: fadeInUp linear (2s) forwards;
 }
 
 .main-container .card .circle {
@@ -310,7 +338,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2px);
   transition: 0.5s;
   overflow: hidden;
@@ -364,93 +392,6 @@ body {
   }
   .subtitle-p {
     font-size: 1vw;
-  }
-
-  .btn-check {
-    font-size: 1.5vw;
-    padding: 20px;
-  }
-
-  .btn-check:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-  }
-  .btn-check:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.4),
-      transparent
-    );
-    transition: 0.5s;
-    transition-delay: 0.5s;
-  }
-
-  .btn-check:hover:after {
-    left: 100%;
-  }
-
-  .btn-check span {
-    position: absolute;
-    display: block;
-    transition: 0.5s ease;
-  }
-
-  .btn-check span:nth-child(1) {
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: #fff;
-  }
-
-  .btn-check:hover span:nth-child(1) {
-    width: 100%;
-    transform: translateX(100%);
-  }
-  .btn-check span:nth-child(3) {
-    bottom: 0;
-    right: 0;
-    width: 0;
-    height: 1px;
-    background: #fff;
-  }
-  .btn-check:hover span:nth-child(3) {
-    width: 100%;
-    transform: translateX(-100%);
-  }
-  .btn-check span:nth-child(2) {
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 0;
-    background: #fff;
-  }
-  .btn-check:hover span:nth-child(2) {
-    height: 100%;
-    transform: translateY(100%);
-  }
-  .btn-check span:nth-child(4) {
-    bottom: 0;
-    right: 0;
-    width: 1px;
-    height: 0;
-    background: #fff;
-  }
-  .btn-check:hover span:nth-child(4) {
-    height: 100%;
-    transform: translateY(-100%);
   }
 
   .main-container .card .content a {
