@@ -7,6 +7,7 @@ import Project5 from "../images/project5.png";
 import Project6 from "../images/project6.png";
 import Project7 from "../images/project7.png";
 import Project8 from "../images/project8.png";
+import Project9 from "../images/project9.png";
 
 const Main = () => {
   const projects = [
@@ -72,6 +73,14 @@ const Main = () => {
       live: "https://jaceksl1.github.io/timer-JS/",
       code: "https://github.com/jaceksl1/timer-JS",
       img: Project8,
+    },
+    {
+      id: 9,
+      description:
+        "Simple notes creator - JS",
+      live: "https://jaceksl1.github.io/notes-JS/",
+      code: "https://github.com/jaceksl1/notes-JS",
+      img: Project9,
     },
   ];
 
