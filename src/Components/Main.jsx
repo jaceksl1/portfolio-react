@@ -77,7 +77,7 @@ const Main = () => {
     {
       id: 9,
       description:
-        "Simple notes creator - JS",
+        "Application for taking notes - JS",
       live: "https://jaceksl1.github.io/notes-JS/",
       code: "https://github.com/jaceksl1/notes-JS",
       img: Project9,
