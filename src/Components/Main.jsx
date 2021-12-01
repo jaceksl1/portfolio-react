@@ -31,7 +31,7 @@ const Main = () => {
     {
       id: 3,
       description:
-        "Simple site - HTML, CSS, JS/React - rebuilded first project from bootcamp.",
+        "Simple bill spliter - HTML, CSS, JS.",
       live: "https://adoring-noyce-2338cd.netlify.app/",
       code: "https://github.com/jaceksl1/project1-rwd-react",
       img: Project3,
