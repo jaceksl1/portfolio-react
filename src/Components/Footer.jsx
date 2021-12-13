@@ -11,7 +11,7 @@ const Footer = () => {
       <h1 className="contact-section-header">
         Below You can find my profiles and personal contact.
       </h1>
-      <p>Is there anything I can help you with?</p>
+      <p>Want to work together or have any questions?</p>
       <section className="gradient-section">
         <ul className="gradient-ul">
           <li>
@@ -44,6 +44,7 @@ const Footer = () => {
           </li>
         </ul>
       </section>
+      <h5 class="footer-h5">Designed and Developed by Jacek Slomian</h5>
     </footer>
   );
 };

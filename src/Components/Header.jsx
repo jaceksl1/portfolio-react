@@ -1,4 +1,5 @@
 import React from "react";
+
 const Header = () => {
   const element1 = <i class="fab fa-react fa-4x"></i>;
   const element2 = <i class="fab fa-js-square fa-4x"></i>;
@@ -10,7 +11,9 @@ const Header = () => {
   return (
     <nav>
       <div className="nav-wrapper">
-        <h1 className="head-title">Hello, my name is Jacek.</h1>
+        <div className="title-wrapper">
+          <h1 className="head-title">Hello, my name is Jacek.</h1>
+        </div>
         <div className="subtitle">
           <p className="subtitle-p">Tech stack:</p>
           <div className="subitile-elements-wrapper">
@@ -37,7 +40,6 @@ const Header = () => {
               </ul>
             </section>
           </div>
-          <p className="subtitle-p">This is my portfolio:</p>
         </div>
       </div>
     </nav>

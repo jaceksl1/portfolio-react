@@ -30,8 +30,7 @@ const Main = () => {
     },
     {
       id: 3,
-      description:
-        "Simple bill spliter - HTML, CSS, JS.",
+      description: "Simple bill spliter - HTML, CSS, JS.",
       live: "https://adoring-noyce-2338cd.netlify.app/",
       code: "https://github.com/jaceksl1/project1-rwd-react",
       img: Project3,
@@ -76,8 +75,7 @@ const Main = () => {
     },
     {
       id: 9,
-      description:
-        "Application for taking notes - JS",
+      description: "Application for taking notes - JS",
       live: "https://jaceksl1.github.io/notes-JS/",
       code: "https://github.com/jaceksl1/notes-JS",
       img: Project9,
@@ -86,6 +84,7 @@ const Main = () => {
 
   return (
     <>
+      <p className="subtitle-p">This is my portfolio:</p>
       <section className="section-wrapper">
         <div className="main-container">
           {projects.map(({ id, description, live, code, img }) => (
