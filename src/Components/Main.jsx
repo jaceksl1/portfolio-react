@@ -8,6 +8,8 @@ import Project6 from "../images/project6.png";
 import Project7 from "../images/project7.png";
 import Project8 from "../images/project8.png";
 import Project9 from "../images/project9.png";
+import Project10 from "../images/project10.png";
+import Project11 from "../images/project11.png";
 
 const Main = () => {
   const projects = [
@@ -79,6 +81,20 @@ const Main = () => {
       live: "https://jaceksl1.github.io/notes-JS/",
       code: "https://github.com/jaceksl1/notes-JS",
       img: Project9,
+    },
+      {
+      id: 10,
+      description: "To do list - My first attempt to Jquery",
+      live: "https://jaceksl1.github.io/toDoList-JQuery/",
+      code: "https://github.com/jaceksl1/toDoList-JQuery",
+      img: Project10,
+    },
+    {
+      id: 11,
+      description: "To do list - My first attempt to Jquery",
+      live: "https://jaceksl1.github.io/bookList-JS/",
+      code: "https://github.com/jaceksl1/bookList-JS",
+      img: Project11,
     },
   ];
 
