@@ -84,14 +84,14 @@ const Main = () => {
     },
       {
       id: 10,
-      description: "To do list - My first attempt to Jquery",
+      description: "To do list - My first attempt to JQuery",
       live: "https://jaceksl1.github.io/toDoList-JQuery/",
       code: "https://github.com/jaceksl1/toDoList-JQuery",
       img: Project10,
     },
     {
       id: 11,
-      description: "To do list - My first attempt to Jquery",
+      description: "Create book list - JS, localStorage",
       live: "https://jaceksl1.github.io/bookList-JS/",
       code: "https://github.com/jaceksl1/bookList-JS",
       img: Project11,
