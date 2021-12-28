@@ -1,15 +1,12 @@
 import React from "react";
 import Project1 from "../images/project1.png";
 import Project2 from "../images/project2.png";
-import Project3 from "../images/project3.png";
 import Project4 from "../images/project4.png";
-import Project5 from "../images/project5.png";
-import Project6 from "../images/project6.png";
-import Project7 from "../images/project7.png";
 import Project8 from "../images/project8.png";
-import Project9 from "../images/project9.png";
 import Project10 from "../images/project10.png";
 import Project11 from "../images/project11.png";
+import Project12 from "../images/project12.png";
+import Project13 from "../images/project13.gif";
 
 const Main = () => {
   const projects = [
@@ -32,13 +29,6 @@ const Main = () => {
     },
     {
       id: 3,
-      description: "Simple bill spliter - HTML, CSS, JS.",
-      live: "https://adoring-noyce-2338cd.netlify.app/",
-      code: "https://github.com/jaceksl1/project1-rwd-react",
-      img: Project3,
-    },
-    {
-      id: 4,
       description:
         "Rebuilded budget app. HTML, CSS, JS/React. At the beginning I used VanillaJS. ",
       live: "https://agitated-hamilton-b13a41.netlify.app/",
@@ -46,29 +36,7 @@ const Main = () => {
       img: Project4,
     },
     {
-      id: 5,
-      description:
-        "My second project from BootCamp. Tech: HTML CSS/Bootstrap RWD. ",
-      live: "https://jaceksl1.github.io/project2-RWD/#",
-      code: "https://github.com/jaceksl1/project2-RWD",
-      img: Project5,
-    },
-    {
-      id: 6,
-      description: "Simple validation form in Vanilla JS.",
-      live: "https://jaceksl1.github.io/simpleFormValidation-JS/",
-      code: "https://github.com/jaceksl1/simpleFormValidation-JS",
-      img: Project6,
-    },
-    {
-      id: 7,
-      description: "Magic ball - HTML, CSS, Vanilla JS",
-      live: "https://jaceksl1.github.io/magicBall-JS/",
-      code: "https://github.com/jaceksl1/magicBall-JS",
-      img: Project7,
-    },
-    {
-      id: 8,
+      id: 4,
       description:
         "Timer - Vanilla JS full timer with history in arr change color change background",
       live: "https://jaceksl1.github.io/timer-JS/",
@@ -76,31 +44,38 @@ const Main = () => {
       img: Project8,
     },
     {
-      id: 9,
-      description: "Application for taking notes - JS",
-      live: "https://jaceksl1.github.io/notes-JS/",
-      code: "https://github.com/jaceksl1/notes-JS",
-      img: Project9,
-    },
-      {
-      id: 10,
-      description: "To do list - My first attempt to JQuery",
+      id: 5,
+      description: "To do list - Jquery",
       live: "https://jaceksl1.github.io/toDoList-JQuery/",
       code: "https://github.com/jaceksl1/toDoList-JQuery",
       img: Project10,
     },
     {
-      id: 11,
-      description: "Create book list - JS, localStorage",
+      id: 6,
+      description: "Book list - JS, LocalStorage",
       live: "https://jaceksl1.github.io/bookList-JS/",
       code: "https://github.com/jaceksl1/bookList-JS",
       img: Project11,
+    },
+    {
+      id: 7,
+      description: "Work flow board - JS, LocalStorage",
+      live: "",
+      code: "https://github.com/jaceksl1/work-flow-board-JS",
+      img: Project12,
+    },
+    {
+      id: 7,
+      description: "Landing Page React",
+      live: "",
+      code: "https://github.com/jaceksl1/LandingPage-React",
+      img: Project13,
     },
   ];
 
   return (
     <>
-      <p className="subtitle-p">This is my portfolio:</p>
+      <p className="subtitle-p">Some of my projects:</p>
       <section className="section-wrapper">
         <div className="main-container">
           {projects.map(({ id, description, live, code, img }) => (
