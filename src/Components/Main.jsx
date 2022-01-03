@@ -2,11 +2,11 @@ import React from "react";
 import Project1 from "../images/project1.png";
 import Project2 from "../images/project2.png";
 import Project4 from "../images/project4.png";
-import Project8 from "../images/project8.png";
 import Project10 from "../images/project10.png";
 import Project11 from "../images/project11.png";
 import Project12 from "../images/project12.png";
 import Project13 from "../images/project13.gif";
+import Project14 from "../images/project14.gif";
 
 const Main = () => {
   const projects = [
@@ -38,10 +38,10 @@ const Main = () => {
     {
       id: 4,
       description:
-        "Timer - Vanilla JS full timer with history in arr change color change background",
-      live: "https://jaceksl1.github.io/timer-JS/",
-      code: "https://github.com/jaceksl1/timer-JS",
-      img: Project8,
+        "Power Gym Website - Vanilla JS, Tailwind",
+      live: "https://jaceksl1.github.io/Power-Gym-Website/",
+      code: "https://github.com/jaceksl1/Power-Gym-Website",
+      img: Project14,
     },
     {
       id: 5,
