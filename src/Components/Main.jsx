@@ -65,7 +65,7 @@ const Main = () => {
       img: Project12,
     },
     {
-      id: 7,
+      id: 8,
       description: "Landing Page React",
       live: "",
       code: "https://github.com/jaceksl1/LandingPage-React",
