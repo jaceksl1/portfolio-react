@@ -2,11 +2,11 @@ import React from "react";
 import Project1 from "../images/project1.png";
 import Project2 from "../images/project2.png";
 import Project4 from "../images/project4.png";
-import Project10 from "../images/project10.png";
 import Project11 from "../images/project11.png";
 import Project12 from "../images/project12.png";
 import Project13 from "../images/project13.gif";
 import Project14 from "../images/project14.gif";
+import Project15 from "../images/project15.gif";
 
 const Main = () => {
   const projects = [
@@ -45,10 +45,10 @@ const Main = () => {
     },
     {
       id: 5,
-      description: "To do list - Jquery",
-      live: "https://jaceksl1.github.io/toDoList-JQuery/",
-      code: "https://github.com/jaceksl1/toDoList-JQuery",
-      img: Project10,
+      description: "Multi Page Website - Genesis",
+      live: "https://zealous-montalcini-a2d5a9.netlify.app/",
+      code: "https://github.com/jaceksl1/Genesis-MultiPageWebsite",
+      img: Project15,
     },
     {
       id: 6,
